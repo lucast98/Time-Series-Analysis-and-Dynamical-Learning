@@ -24,7 +24,7 @@ tsIBOVESPA <- zoo(newdata$log,newdata$data)
 #plotar grafico com ggplot2
 ss <- subset(newdata, data > as.Date("2005-1-1"))
 p <- ggplot(ss, aes(x=data, y=log)) + geom_line(color="blue") + theme_bw() 
-p + ggtitle("Log-retornos das ações da IBOVESPA") + xlab("Data") + ylab("IBOVESPA")
+p + ggtitle("Quadrado dos Log-retornos das ações da IBOVESPA") + xlab("Data") + ylab("IBOVESPA")
 
 newdata$data <- year(newdata$data)
 #Matriz$Data <- year(Matriz$Data)
