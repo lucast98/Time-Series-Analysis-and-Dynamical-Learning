@@ -4,6 +4,7 @@ library(zoo)
 library(ggplot2)
 
 #importar os dados
+#setwd("/home/lucas/")
 wb <- loadWorkbook("ipeadata[07-09-2020-02-32].xls")
 Matriz <- readWorksheet(wb, sheet = "Séries", startRow = 0, startCol = 0)
 
